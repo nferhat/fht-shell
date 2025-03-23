@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+    <gresource prefix="/fht/desktop/Shell/icons/scalable/actions/">
+      <!--
+        Battery icons
+        These are from UPower, but I took the colored versions when they are available.
+      -->
+      <file preprocess="xml-stripblanks">ac-adapter-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-caution-charging-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-caution-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-empty-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-full-charged-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-full-charging-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-good-charging-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-good-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-low-charging-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-low-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">battery-missing-symbolic.svg</file>
+
+      <!--
+        Network icons
+        These are loosely matching what networkmanager has
+      -->
+      <file preprocess="xml-stripblanks">network-wireless-no-route-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-offline-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-error-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-acquiring-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-signal-none-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-signal-weak-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-signal-ok-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-signal-good-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wireless-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wired-no-route-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wired-error-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wired-disconnected-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wired-acquiring-symbolic.svg</file>
+      <file preprocess="xml-stripblanks">network-wired-activated-symbolic.svg</file>
+    </gresource>
+</gresources>

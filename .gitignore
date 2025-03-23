@@ -1,0 +1,7 @@
+/target/
+# when building with nix
+/result
+.direnv
+# testing stuff
+stdout
+stderr

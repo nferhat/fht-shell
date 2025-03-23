@@ -1,0 +1,37 @@
+[package]
+name = "fht-shell"
+version = "0.1.0-alpha"
+authors = ["Nadjib Ferhat <nadjib.ferhat@etu.usthb.dz>"]
+license = "GPL-3.0"
+edition = "2021"
+repository = "https://github.com/nferhat/fht-shell"
+
+[profile.release]
+lto = true
+
+[dependencies]
+# NOTE: I am purposefully not using the latest versions of adw and gtk to use an older glib since
+# this is what wireplumber-rs is using. Annoying, hope they update it soon.
+adw = { version = "0.6", package = "libadwaita", features = ["v1_4"] }
+anyhow = "1.0.97"
+async-io = "2.4.0"
+chrono = "0.4.40"
+fht-animation = { git = "https://github.com/nferhat/fht-animation", version = "0.1.0" }
+futures-util = "0.3.31"
+glib = { version = "0.19", features = ["log"] }
+grass = "0.13.4"
+gtk = { version = "0.8.2", package = "gtk4", features = ["v4_12"] }
+gtk4-layer-shell = "0.3"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+serde_repr = "0.1.20"
+tokio = { version = "1.44.1", features = ["sync"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3"
+xdg = "2.5.2"
+zbus = "5.5.0"
+# pipewire = { version = "0.8.0", features = ["v0_3_77"] }
+# wireplumber = { features = ["v0_5"], git = "https://github.com/arcnmx/wireplumber.rs", branch = "wp-0.5" }
+
+[build-dependencies]
+glib-build-tools = "0.19"

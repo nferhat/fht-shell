@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="PanelWindow" parent="AdwApplicationWindow">
+    <property name="content">
+      <object class="GtkCenterBox" id="centerbox">
+        <property name="baseline-position">1</property>
+        <property name="orientation">0</property>
+        <property name="halign">0</property>
+        <property name="valign">0</property>
+        <property name="margin-start">12</property>
+        <property name="margin-end">12</property>
+        <property name="margin-top">12</property>
+        <property name="margin-bottom">12</property>
+
+        <!--
+          Here we just create the start/middle/end boxes for us to populate.
+          At runtime we add the widgets we want inside.
+        -->
+
+        <property name="start-widget">
+          <object class="GtkBox" id="left_box">
+            <property name="orientation">0</property>
+            <property name="spacing">10</property>
+            <property name="valign">3</property> <!-- GTK_ALIGN_CENTER -->
+            <property name="halign">1</property> <!-- GTK_ALIGN_START -->
+          </object>
+        </property>
+
+        <property name="center-widget">
+          <object class="GtkBox" id="middle_box">
+            <property name="orientation">0</property>
+            <property name="spacing">10</property>
+            <property name="valign">3</property> <!-- GTK_ALIGN_CENTER -->
+            <property name="halign">3</property> <!-- GTK_ALIGN_CENTER -->
+          </object>
+        </property>
+
+        <property name="end-widget">
+          <object class="GtkBox" id="right_box">
+            <property name="orientation">0</property>
+            <property name="spacing">10</property>
+            <property name="valign">3</property> <!-- GTK_ALIGN_CENTER -->
+            <property name="halign">2</property> <!-- GTK_ALIGN_END -->
+          </object>
+        </property>
+      </object>
+    </property>
+  </template>
+</interface>
